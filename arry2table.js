@@ -5,12 +5,12 @@
 			var obj = {};
 			obj.name = "name"+i;
 			obj.wxh = "wxh"+i;
-            obj.aa = "ff";
+            		obj.aa = "ff";
 			ary.push(obj);
 		}
 
         // get the object array's key 
-        var keys = ary.length>0 ? Object.keys(ary[0]) : null;
+        var keys = ary.length ? Object.keys(ary[0]) : (function(){console.log('array has no object')})();
 
         if (keys) {
             //create target table
