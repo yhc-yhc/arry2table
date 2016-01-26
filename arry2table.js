@@ -83,3 +83,13 @@ function array2table(paramObj){
         });
         elemt.appendChild(table);
     }
+//use like this 
+'use strict';
+	let ctx = document.getElementsByClassName("col-xs-12")[0];
+    let paramObj ={
+        dataSource  : ary,
+        tarElmt     : ctx,
+        tbClass     : 'table table-striped',
+        showIdx     : true
+    }
+    array2table(paramObj)
